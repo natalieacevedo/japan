@@ -24,22 +24,44 @@ slider.style.transform = `scale(0.3) translatex(-300px)`;
 
 
 
-bottomRight.addEventListener('click', function () {
+bottomRight.addEventListener('click',nextSlide);
 
+bottomLeft.addEventListener('click',prevSlide);
+
+//function to make it work in both botones y no repetirlo
+
+function goToSlide(slide) {
+  
+    slides.forEach((s, i) => {
+        //console.log(currentSlide);
+        s.style.transform = `translatex(${100 * (i - slide)}%)`;
+        
+    }); 
+};
+
+
+function nextSlide() {
     if (currentSlide === maxSlide) {
         currentSlide = 0;
-    } else {
-
+    }
+    else {
         currentSlide++;
     }
+    goToSlide(currentSlide);
+};
 
-    slides.forEach((s, i) => {
 
-        
-        console.log(currentSlide);
-        s.style.transform = `translatex(${100 * (i - currentSlide)}%)`;
-        
-    });
-    
-});
+
+function prevSlide() {
+   
+    if (currentSlide === 0) {
+        currentSlide = maxSlide;
+   
+    } else {
+        currentSlide--
+    }
+
+    goToSlide(currentSlide);
+};
+
 
