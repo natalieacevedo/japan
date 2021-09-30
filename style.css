@@ -1,16 +1,134 @@
-body
-{
+/* #logo{
+    display: inline;
+    
+}
+
+
+#mainNav{
+    overflow: auto;
+}
+
+#logo{
+    float: right;
+} */
+* {
   margin: 0;
   padding: 0;
-  
+}
+
+#mainNav {
+  overflow: auto;
+  height: 20%;
+  background-color: blueviolet;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15vh;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn--left {
+  left: 9%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 9%;
+  transform: translate(50%, -50%);
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    background-color: blue;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+
+  .slider {
+    max-width: 80rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-
-#menuToggle
-{
+#menuToggle {
   width: 15%;
   display: flex;
   position: relative;
@@ -18,123 +136,107 @@ body
   margin-top: 5%;
   margin-right: 5vh;
   margin-left: 5vh;
-  
-  
+
   z-index: 1;
-  
+
   -webkit-user-select: none;
   user-select: none;
 }
 
-
-
-
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 4;
   position: absolute;
   bottom: -20px;
   left: -5px;
-  
+
   cursor: pointer;
-  
+
   opacity: 0;
   z-index: 2;
-  
+
   -webkit-touch-callout: none;
 }
 
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: #cdcdcd;
   border-radius: 4vh;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{
+#menu {
   position: relative;
   width: 200px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
 }
 
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 .LogoImg {
-    width: 15%;
-    margin-right: 5vh;
-    margin-left: 5vh;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 5px;
-    position: relative;
-    top: 42px;
+  width: 15%;
+  margin-right: 5vh;
+  margin-left: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 5px;
+  position: relative;
+  top: 42px;
 }
 
 .middleTitle {
   width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.skHeader{
+.skHeader {
   width: 100%;
   height: 10vh;
   display: flex;
@@ -143,7 +245,7 @@ body
   background-color: hotpink;
 }
 
-.FootContainer{
+.FootContainer {
   width: 100%;
   height: 10vh;
   margin-top: 5vh;

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Code/jonas2021/bankist"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "japan"
+	}
+}
