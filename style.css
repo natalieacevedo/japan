@@ -1,4 +1,4 @@
-#logo{
+/* #logo{
     display: inline;
     
 }
@@ -10,32 +10,62 @@
 
 #logo{
     float: right;
+} */
+* {
+  margin: 0;
+  padding: 0;
 }
 
+
+
+
+
+#mainNav{
+  overflow: auto;
+  height: 20%;
+  background-color: blueviolet;
+}
+
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+/* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+
 .slider {
-    max-width: 100rem;
-    height: 50rem;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15vh;
+}
 
-  /* .slide{
-      transform: translate(100%);
-  } */
-
-  .slide {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 50rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 4rem;
+  width:  4rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   
-    /* THIS creates the animation! */
-    transition: transform 1s;
-  }
   
   .slide > img {
     /* Only for images that have different size than slide */
@@ -44,30 +74,61 @@
     object-fit: cover;
   }
 
-  .slider__btn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    border: none;
-    background: rgba(255, 255, 255, 0.7);
-    font-family: inherit;
-    color: #333;
-    border-radius: 50%;
-    height: 5.5rem;
-    width: 5.5rem;
-    font-size: 3.25rem;
-    cursor: pointer;
-  }
-
   .slider__btn--left {
-    left: 6%;
+    left: 9%;
     transform: translate(-50%, -50%);
+
   }
   
   .slider__btn--right {
-    right: 6%;
+    right: 9%;
     transform: translate(50%, -50%);
   }
   
   
  
+
+    @media screen and (min-width: 780px){
+
+      body{
+        background-color: blue;
+      }
+      
+      .slide {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+      /* THIS creates the animation! */
+        transition: transform 1s;
+      }
+
+      .slider {
+        max-width: 80rem;
+        height: 50rem;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider__btn {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        border: none;
+        background: rgba(255, 255, 255, 0.7);
+        font-family: inherit;
+        color: #333;
+        border-radius: 50%;
+        height: 4rem;
+        width:  4rem;
+        font-size: 3.25rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+  }
