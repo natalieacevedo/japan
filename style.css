@@ -1,30 +1,34 @@
 
 *{
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Noto Sans', sans-serif;
 }
-body{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
+
 .container{
     height: 100h;
     margin: 0vh;
     padding: 0vh;
     width: 100%;
     align-items: center;
+    background-color: #FCEEEE;
 }
 header{
     width: 100%;
     height: 10vh;
     margin-bottom: 5vh;
-    background-color: burlywood;
+    background-color: white;
+    color:#ff4d4d;
 }
 footer{
     height: 10vh;
     margin-top: 5vh;
     width: 100%;
-    background-color: burlywood;
+    background-color: white;
+    margin: 0%;
+    color:#ff4d4d;
 }
 .page-title{
     width: 100%;
@@ -32,76 +36,68 @@ footer{
     text-align: center;
     margin-top : 0vh;
     margin-bottom: 5vh;
+    color:#ff4d4d;
+    opacity:initial;
 }
 .carousel{
-    max-width: 1200px;
     height: 60vh;
     margin-top : 0vh;
     margin-bottom: 5vh;
     padding: 0 30px;
-    margin-left:5%;
-    margin-right:5%;
 }
 .card{
-    height: 50vh;
-    margin-top : 0vh;
-    margin-bottom: 5vh;
+    height: 60vh;
     border-radius: 10px;
-    border:solid 2px rgb(177, 177, 177);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-.owl-dots{
-    height: 5vh;
-    margin-top : 0vh;
-    margin-bottom: 0vh;
-    text-align: center;
-}
-.card-header{
-    background-color: cadetblue;
     background-image:url("https://www.planetware.com/photos-large/JPN/japan-mt-fuji-and-cherry-blossoms.jpg");
-    background-size: 100% 100%;
-    height: 30vh;
-    margin-top : 0vh;
-    margin-bottom: 2.5vh;
-}
-.card-description{
-    height: 15vh;
-    color: rgb(10, 8, 8);
-    text-align: center;
-    font-size: 50px;
-    margin-top : 0vh;
-    margin-bottom: 0vh;
-}
-.card-title{
-    height: 8vh;
-    margin-top : 0vh;
-    margin-bottom: 2vh;
-    color: rgb(10, 8, 8);
-    text-align: center;
-    padding: 0px;
-}
-.card-type{
-    height: 5vh;
-    color: rgb(105, 105, 105);
-    text-align: center;
-    margin: 0px;
-    padding:  0px;
-    font-size: 25px;
+    background-size: cover;
+    box-shadow: rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
+    inset rgba(white, 0.5) 0 0 0 6px;
+
 }
 
-.owl-dot{
-  height: 15px;
-  width: 45px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 5px;
-  outline: none;
-  border-radius: 14px;
-  border: 2px solid #0072bc!important;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
+.card:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
 }
-.owl-dot.active,
-.owl-dot:hover{
-  background: #0072bc!important;
+.owl-dots{
+    height: 0vh;
+    margin-top : 0vh;
+    margin-bottom: 0vh;
+}
+.card-empty-space{
+    height:5px;
+    padding: 0px;
+    margin:0px;
+}
+
+.card-info{
+    height: 58vh;
+    padding: 0px;
+    font-size: 50px;
+    border: solid 2px white;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.card-title{
+    margin-top: 48vh;
+    height: 4vh;
+    margin-bottom: 0.5vh;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 700;
+    margin-left:5px;
+}
+.card-type{
+    height: 2vh;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding:  0px;
+    font-size: 20px;
+    margin-left:5px;
 }
