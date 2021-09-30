@@ -11,16 +11,7 @@ let maxSlide = slides.length -1;
 let currentSlide = 0;
 
 
-
-console.log(slides);
-
-
-console.log(bottomLeft);
-
-console.log(bottomRight);
-
-
-slider.style.transform = `scale(0.3) translatex(-300px)`;
+//slider.style.transform = `scale(0.5) translatex(-300px)`;
 
 
 
