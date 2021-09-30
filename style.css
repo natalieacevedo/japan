@@ -1,4 +1,4 @@
-.container {
+.container-joao {
     margin: auto;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -9,12 +9,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.section {
+.section-joao {
     margin-top: 125px;
     margin-right: 100px;
 }
 
-.article {
+.article-joao {
     text-align: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -25,7 +25,7 @@
     margin-right: 100px;
 }
 
-.image {
+.image-joao {
     width: 900px;
     margin-left: 165px;
     border-top-left-radius: 50% 50%;
@@ -36,16 +36,15 @@
    }
 
 
-.title {
+.title-joao {
   text-align: center; 
   font-size: 4em;
   
 }
 
-.description {
+.description-joao {
     text-align: center;
     font-size: 2em;
 }
-
 
 
