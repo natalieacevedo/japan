@@ -1,10 +1,10 @@
+
 body
 {
   margin: 0;
-  padding: 0;
-  
+  padding: 0;  
   background: #232323;
-  color: #cdcdcd;
+  color: #FF4D4D;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
@@ -15,14 +15,13 @@ body
   display: flex;
   position: relative;
   bottom: 40px;
-  margin-top: 5%;
+  margin-top: 65px;
   margin-right: 5vh;
   margin-left: 5vh;
   
   
   z-index: 1;
   
-  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -31,9 +30,7 @@ body
 
 #menuToggle input
 {
-  display: block;
   width: 40px;
-  height: 4;
   position: absolute;
   bottom: -20px;
   left: -5px;
@@ -43,18 +40,17 @@ body
   opacity: 0;
   z-index: 2;
   
-  -webkit-touch-callout: none;
 }
 
 #menuToggle span
 {
   display: block;
-  width: 33px;
+  width: 10%;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: #FF4D4D;
   border-radius: 4vh;
   
   z-index: 1;
@@ -93,8 +89,7 @@ body
   padding: 50px;
   padding-top: 125px;
   
-  background: #ededed;
-  list-style-type: none;
+  background: white;
   -webkit-font-smoothing: antialiased;
   
   transform-origin: 0% 0%;
@@ -107,6 +102,7 @@ body
 {
   padding: 10px 0;
   font-size: 22px;
+  color: #FF4D4D
 }
 
 #menuToggle input:checked ~ ul
@@ -114,9 +110,7 @@ body
   transform: none;
 }
 .LogoImg {
-    width: 15%;
-    margin-right: 5vh;
-    margin-left: 5vh;
+    width: 50%;
     display:flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -126,27 +120,27 @@ body
 }
 
 .middleTitle {
-  width: 50%;
+  width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
 
 }
 
 
 .skHeader{
-  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5vh;
-  background-color: hotpink;
+  background-color: white;
 }
 
 .FootContainer{
   width: 100%;
   height: 10vh;
-  margin-top: 5vh;
   background-color: white;
   padding: 0;
   margin: 0;
@@ -156,7 +150,14 @@ body
 
 .copyright {
   display: flex;
-  font-size: 16px;
-  opacity: 50%;
   text-align: center;
 }
+@media only screen and (max-width:400px){
+  h1{font-size:5vw;
+    justify-content: flex-start;
+  }
+  h3{font-size:5vw;}
+  }
+  .skHeader{
+    width: 100%;
+  }
