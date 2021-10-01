@@ -2,27 +2,31 @@ const placesToVisit = [
     {
       name: "Tokyo",
       type: "city",
-      picture: "https://lp-cms-production.imgix.net/2021-04/Pontocho_Kyoto.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2"
+      picture: "https://lp-cms-production.imgix.net/2021-04/Pontocho_Kyoto.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2",
+      description: "hiii"
     },
     {
       name: "Naoshima",
       type: "island",
-      picture: "https://www.erikastravelventures.com/wp-content/uploads/2019/08/P1010422-1024x762.jpg"
+      picture: "https://www.erikastravelventures.com/wp-content/uploads/2019/08/P1010422-1024x762.jpg",
+      description: "hiii"
     },
     {
       name: "Memorial Cenotaph ",
       type: "type",
-      picture: "https://lp-cms-production.imgix.net/2021-04/shutterstockRF_1393700846.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2"
+      picture: "https://lp-cms-production.imgix.net/2021-04/shutterstockRF_1393700846.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2",
+      description: "hiii"
     },
     {
       name: "Yakushima",
       type: "island",
-      picture: "https://lp-cms-production.imgix.net/2021-04/shutterstockRF_423304240.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2"
+      picture: "https://lp-cms-production.imgix.net/2021-04/shutterstockRF_423304240.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2",
+      description: "hiii"
     },
     {
       name: "Kamikōchi",
       type: "type",
-      picture: "https://lp-cms-production.imgix.net/2021-04/shutterstockRF_1254380497.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2"
+      picture: "https://lp-cms-production.imgix.net/2021-04/shutterstockRF_1254380497.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2",
     }
 ];
 
@@ -64,6 +68,7 @@ function createCard(name,type,picture){
 }
 
 
+
 for(let i=0;i<placesToVisit.length;i++){
     createCard(placesToVisit[i].name,placesToVisit[i].type,placesToVisit[i].picture);
 }
@@ -97,4 +102,22 @@ $(".carousel").owlCarousel({
       }
     }
 });
+
+//popup stuff
+function showPopUp() {
+  //show popup
+  var popUp = document.querySelector(".pop-up");
+  popUp.style.display="inline";
+  //blur the other stuff
+  var container= document.querySelector(".container");
+  container.style.filter="blur(30px)";
+}
+function hidePopUp() {
+  //hide popup
+  var popUp = document.querySelector(".pop-up");
+  popUp.style.display="none";
+  //unblur backgorund stuff 
+    var container= document.querySelector(".container");
+    container.style.filter="blur(0px)";
+}
 

@@ -16,11 +16,13 @@
    </head>
    <body>
       <div class="container">
+         <!--header-->
         <header>HEADER</header>
+         <!--page content -->
         <section class="page-content">
          <h1 class="page-title">What to do in Japan?</h1>
             <div class="carousel owl-carousel">
-               <div class="card">
+               <div class="card" onclick = "showPopUp()" >
                   <div class="card-empty-space"></div>
                   <div class="card-info">
                      <div class="card-title">Mount Fuji</div>
@@ -30,7 +32,13 @@
                </div>
             </div>
          </section>
+          <!--footer-->
          <footer>FOOTER</footer>
+      </div>
+      <!-- here come the popups -->
+      <div class="pop-up">
+         <button class = "close-button" onclick = "hidePopUp()">x</button>
+            <div class = "message">hiii</div>
       </div>
       <script src="script.js"></script>
    </body>

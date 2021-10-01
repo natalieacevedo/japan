@@ -101,3 +101,41 @@ footer{
     font-size: 20px;
     margin-left:5px;
 }
+                                                            /* POPUP STUFF */
+
+.pop-up {
+    display: none;
+    background-color: #FCEEEE;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left:0;
+    margin: 0px;
+ }
+
+ .close-button {
+    font-size: 30px;
+    margin-left:5%;
+    cursor: pointer;
+    color: #ff4d4d;
+    font-weight: 600 ;
+    background-color:#FCEEEE ;
+    border: none;
+ }
+ .message {
+    text-align: center;
+ }
+
+ @media screen and (min-width:400px){
+    .pop-up {
+        width: 50%;
+        margin-left:25%;
+        margin-right:25%;
+        border: solid 4px #ff4d4d;
+        border-radius: 5%; 
+        height: 80vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    } 
+ }

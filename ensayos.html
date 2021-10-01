@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+         function showPopUp() {
+            var popUp = document.querySelector(".pop-up");
+            popUp.style.display="block";
+            //get card and hide it
+            var card = document.querySelector(".card");
+            card.style.display="none";
+         }
+         function hidePopUp() {
+            var popUp = document.querySelector(".pop-up");
+            popUp.style.display="none";
+              //get card and shiw it
+              var card = document.querySelector(".card");
+            card.style.display="block";
+         }
+      </script>
+      <style>
+         .pop-up {
+            display: none;
+            background-color: white;
+            width: 30%;
+            min-width: 300px;
+            height: 80vh;
+            text-align: center;
+            margin: auto;
+            border:solid 2px  #ff4d4d;
+            border-radius: 10%;
+         }
+         .close-button {
+            background-color: #4B5C7F;;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            cursor: pointer;
+         }
+         .message {
+            text-align: left;
+         }
+         .message-title {
+            color:#ff4d4d;
+            font-size: 50px;
+        }
+        .message-text {
+            color:#4B5C7F;
+            font-size: 30px;
+        }
+      </style>
+   </head>
+   <body>
+      <div class="pop-up">
+        <button class = "close-button" onclick = "hidePopUp()">x</button>
+         <div class = "message">
+             <div class="message-title">MOUNT FUJI</div>
+             <div class="message-text">MOUNT FUJI IS BLA BLA BLA</div>
+         </div>
+      </div>
+      <div class="card" onclick = "showPopUp()">HOLA</div>
+   </body>
+</html>
