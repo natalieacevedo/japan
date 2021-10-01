@@ -126,7 +126,7 @@ body {
   color: #FF4D4D;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
-
+/* this is the burger button menu*/
 #menuToggle {
   width: 15%;
   display: flex;
@@ -135,7 +135,6 @@ body {
   margin-top: 65px;
   margin-right: 5vh;
   margin-left: 5vh;
-
   z-index: 1;
 
   
@@ -161,7 +160,7 @@ body {
 
 
 }
-
+/*This is the button design*/
 #menuToggle span {
   display: block;
   width: 10%;
@@ -219,7 +218,7 @@ body {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li {
+#menu a {
   padding: 10px 0;
   font-size: 22px;
   color: #FF4D4D
@@ -237,26 +236,6 @@ body {
     position: relative;
     top: 42px;
 }
-
-.middleTitle {
-  width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skHeader{
-  width: 15%;
-  margin-right: 5vh;
-  margin-left: 5vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 5px;
-  position: relative;
-  top: 42px;
-}
-
 .middleTitle {
   width: 50%;
   display: flex;
@@ -285,7 +264,8 @@ body {
 
 .copyright {
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  justify-content: space-around; 
 }
 
 @media only screen and (max-width:400px){
