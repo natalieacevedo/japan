@@ -1,12 +1,33 @@
+#close {
+    width: 8px;
+    height: 16px;
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 1475px;
+}
+
+#close:hover {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+    color:#fff;
+}
+
 .container-joao {
     margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 1250px;
+    width: 1600px;
     display: flex;
     align-content: space-around;
     font-family: Arial, Helvetica, sans-serif;
-
+    background-color: #FCEEEE;
 }
 
 .section-joao {
@@ -22,13 +43,14 @@
     padding: 50px;
     margin-top: 175px;
     margin-left: 250px;
-    margin-right: 100px;
+    margin-right: 150px;
+    margin-bottom: 100px;
     line-height: 50px;
 }
 
 .image-joao {
     width: 900px;
-    margin-left: 165px;
+    margin-left: 350px;
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
@@ -54,12 +76,13 @@
     color: #4B5C7F;
 }
 
+
 @media (min-width: 1024px) {
     
     
     .image-joao{
         width: 350px;
-        margin-left: 475px;
+        margin-left: 600px;
     }
 
     .article-joao{
