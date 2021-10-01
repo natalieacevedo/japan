@@ -1,94 +1,144 @@
-/* #logo{
-    display: inline;
-    
-}
-
-
-#mainNav{
-    overflow: auto;
-}
-
-#logo{
-    float: right;
-} */
 * {
   margin: 0;
   padding: 0;
 }
 
-
-@media screen and (min-width: 780px) {
-  
-
-  .slide {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 50rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* THIS creates the animation! */
-    transition: transform 1s;
-  }
-
-  .slider {
-    max-width: 80rem;
-    height: 50rem;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .slider__btn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    border: none;
-    background: rgba(255, 255, 255, 0.7);
-    font-family: inherit;
-    color: #333;
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    font-size: 3.25rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-
-  #introduction {
-    text-align-last: center;
-    font-size: 5rem;
+/* added new font feel free to change it if you find something better*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #ff4d4d;
+  font-family: "Explora", cursive;
 }
 
- 
+/* this is the burger button menu*/
+
+#menuToggle {
+  width: 15%;
+  display: flex;
+  position: relative;
+  bottom: 40px;
+  margin-top: 65px;
+  margin-right: 5vh;
+  margin-left: 5vh;
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
 }
+
+#menuToggle input {
+  display: block;
+
+  width: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/*This is the button design*/
+#menuToggle span {
+  display: block;
+  width: 10%;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+
+  border-radius: 4vh;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: relative;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: white;
+  list-style-type: none;
+
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu a {
+  padding: 10px 0;
+  font-size: 22px;
+  color: #ff4d4d;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+.LogoImg {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 5px;
+  position: relative;
+  top: 42px;
+}
+/*Fixed the title to the middle*/
+.middleTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.skHeader {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+  background-color: white;
+}
+
+
+
+
 
 
 #introduction {
   text-align-last: center;
   font-size: 1rem;
-
 }
-
 
 #mainNav {
   overflow: auto;
   height: 20%;
   background-color: blueviolet;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* THIS creates the animation! */
-  transition: transform 1s;
 }
 
 .slider {
@@ -134,140 +184,11 @@
   transform: translate(50%, -50%);
 }
 
-
-
-  
-  
-}
-/* added new font feel free to change it if you find something better*/
-body {
-  margin: 0;
-  padding: 0;
-  background: #232323;
-  color: #FF4D4D;
-  font-family:'Explora', cursive;
-}
-
-/* this is the burger button menu*/
-
-#menuToggle {
-  width: 15%;
-  display: flex;
-  position: relative;
-  bottom: 40px;
-  margin-top: 65px;
-  margin-right: 5vh;
-  margin-left: 5vh;
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
+#bodyPictureNatalie {
+  background-image: url(pictures/blackbackground.jpg);
 }
 
 
-
-
-
-#menuToggle input {
-  display: block;
-
-  width: 40px;
-  position: absolute;
-  bottom: -20px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-  -webkit-touch-callout: none;
-}
-
-
-}
-/*This is the button design*/
-#menuToggle span {
-  display: block;
-  width: 10%;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #cdcdcd;
-
-
-  border-radius: 4vh;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-  position: relative;
-  width: 200px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  
-  background: white;
-  list-style-type: none;
-
-  -webkit-font-smoothing: antialiased;
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-#menu a {
-  padding: 10px 0;
-  font-size: 22px;
-  color: #FF4D4D
-}
-
-#menuToggle input:checked ~ ul {
-  transform: none;
-}
-.LogoImg {
-    width: 50%;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 5px;
-    position: relative;
-    top: 42px;
-}
-/*Fixed the title to the middle*/
-.middleTitle {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.skHeader {
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5vh;
-  background-color: white;
-}
 
 .FootContainer {
   width: 100%;
@@ -282,25 +203,78 @@ body {
 .copyright {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 
-#bodyPictureNatalie{
 
-  background-image: url(pictures/blackbackground.jpg) ;
-  
+@media screen and (min-width: 780px) {
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+
+  .slider {
+    max-width: 80rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  #introduction {
+    text-align-last: center;
+    font-size: 5rem;
+  }
 }
 
 
-@media only screen and (max-width:400px){
-  h1{font-size:5vw;
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 5vw;
     justify-content: flex-start;
   }
-  h3{font-size:5vw;}
+  h3 {
+    font-size: 5vw;
   }
-  .skHeader{
-    width: 100%;
-  }
-
-
+}
+.skHeader {
+  width: 100%;
+}
