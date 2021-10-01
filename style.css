@@ -72,14 +72,6 @@
 
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
 
 #mainNav {
   overflow: auto;
@@ -142,6 +134,19 @@ body {
   transform: translate(50%, -50%);
 }
 
+
+
+  
+  
+}
+/* added new font feel free to change it if you find something better*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #FF4D4D;
+  font-family:'Explora', cursive;
+}
 
 /* this is the burger button menu*/
 
@@ -248,15 +253,15 @@ body {
     position: relative;
     top: 42px;
 }
+/*Fixed the title to the middle*/
 .middleTitle {
-  width: 50%;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
 .skHeader {
-  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -273,7 +278,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
+/* fixed the copyright text to the middle*/
 .copyright {
   display: flex;
   flex-direction: column;
