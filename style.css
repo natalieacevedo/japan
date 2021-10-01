@@ -7,10 +7,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #232323;
-  color: #ff4d4d;
+  color: #FF4D4D;
   font-family: "Explora", cursive;
+  
 }
+
 
 /* this is the burger button menu*/
 
@@ -49,7 +50,7 @@ body {
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: #FF4D4D;
 
   border-radius: 4vh;
   z-index: 1;
@@ -61,7 +62,7 @@ body {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #FF4D4D;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -139,6 +140,7 @@ body {
   overflow: auto;
   height: 20%;
   background-color: blueviolet;
+  
 }
 
 .slider {
