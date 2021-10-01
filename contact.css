@@ -1,0 +1,77 @@
+/* STYLING OF FORM */
+
+#contacto {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 50vw;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 40%;
+    margin: 20vh auto;
+  }
+
+  form li + li {
+    margin-top: 2em;
+  }
+
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin-right: 5%;
+  }
+
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    margin-left: 0.5em; /* same size as the label elements */
+  }
+
+  li {
+    width: 40%;
+  }
+
+  textarea {
+    width: 30vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 45vh;
+    font: 1em sans-serif;
+    border: 5px solid #f009;
+    border-radius: 5px;
+  }
+
+  input {
+    width: 20vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 3em;
+    font: 1em sans-serif;
+    border: 5px solid #f009;
+    border-radius: 10px;
+  }
+
+  #contactbody {
+    background-image: url(pictures/cherryblosoms.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
