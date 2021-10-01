@@ -1,3 +1,102 @@
+
+#close {
+    width: 8px;
+    height: 16px;
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 1475px;
+}
+
+#close:hover {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+    color:#fff;
+}
+
+.container-joao {
+    margin: auto;
+    width: 1600px;
+    display: flex;
+    align-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FCEEEE;
+}
+
+.section-joao {
+    margin-top: 125px;
+    margin-right: 100px;
+}
+
+.article-joao {
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 25px;
+    padding: 50px;
+    margin-top: 175px;
+    margin-left: 250px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    line-height: 50px;
+}
+
+.image-joao {
+    width: 900px;
+    margin-left: 350px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    padding: 20px;
+   }
+
+
+.title-joao {
+    text-align: center; 
+    font-size: 4em;
+    color:white;
+    background-color: #FF4D4D;
+    border: 2px solid #FF4D4D;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.description-joao {
+    text-align: center;
+    font-size: 2em;
+    color: #4B5C7F;
+    margin-top: 30px;
+}
+
+
+@media (min-width: 1024px) {
+    
+    
+    .image-joao{
+        width: 350px;
+        margin-left: 600px;
+    }
+
+    .article-joao{
+        margin-top: 100px;
+    }
+
+    .section-joao{
+        margin-top: 50px;
+    }
+} 
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +106,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #232323;
-  color: #ff4d4d;
+  color: #FF4D4D;
   font-family: "Explora", cursive;
+  
 }
+
 
 /* this is the burger button menu*/
 #menuToggle {
@@ -47,7 +147,13 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+
+  /*background: #cdcdcd;*/
+
+
+  background: #FF4D4D;
+
+
   border-radius: 4vh;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -58,7 +164,7 @@ body {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #FF4D4D;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -128,6 +234,7 @@ body {
   overflow: auto;
   height: 20%;
   background-color: blueviolet;
+  
 }
 
 .slider {
@@ -263,6 +370,11 @@ body {
     font-size: 5vw;
   }
 }
+
+
 .skHeader {
   width: 100%;
 }
+
+
+
