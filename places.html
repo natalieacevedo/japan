@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>What to do in Japan</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="stylesSusana.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- owl carrousel -->
       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -22,7 +22,7 @@
         <section class="page-content">
          <h1 class="page-title">What to do in Japan?</h1>
             <div class="carousel owl-carousel">
-               <div class="card" onclick = "showPopUp()" >
+               <div class="card" onclick = "showPopUp('Mount Fuji')" >
                   <div class="card-empty-space"></div>
                   <div class="card-info">
                      <div class="card-title">Mount Fuji</div>
@@ -36,10 +36,14 @@
          <footer>FOOTER</footer>
       </div>
       <!-- here come the popups -->
-      <div class="pop-up">
-         <button class = "close-button" onclick = "hidePopUp()">x</button>
-            <div class = "message">hiii</div>
+      <div class="pop-up" id="Mount Fuji">
+         <button class = "close-button" onclick = "hidePopUp('Mount Fuji')">x</button>
+         <div class="image-pop-up"></div>
+         <article class="article-pop-up">
+            <h1 class="title-pop-up">Mount Fuji</h1>
+            <p class="description-pop-up">Mount Fuji is Japan's highest mountain with 3776 meters. This mountain has been worshiped as a sacred mountain and it's very popular throughout the world. If you want to enjoy Mount Fuji at a more leisurely pace and from a nice natural surrounding, you should head to the Fuji Five Lake (Fujigoko) region at the northern foot of the mountain, or to Hakone, a nearby hot spring resort. Mount Fuji is officially open for climbing during July and August via several routes.</p>
+         </article>
       </div>
-      <script src="script.js"></script>
    </body>
+   <script src="scriptSusana.js"></script>
 </html>
