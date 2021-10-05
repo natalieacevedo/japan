@@ -1,0 +1,81 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>What to do in Japan</title>
+      <link rel="stylesheet" href="stylesSusana.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- owl carrousel -->
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Noto+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <!--header-->
+        <header>HEADER</header>
+         <!--page content -->
+        <section class="page-content">
+         <h1 class="page-title">What to do eat Japan?</h1>
+            <div class="carousel owl-carousel">
+               <!-- <div class="card" onclick = "showPopUp('Sushi')" >
+                  <div class="card-empty-space"></div>
+                  <div class="card-info">
+                     <div class="card-title">Sushi</div>
+                     <div class="card-type">Raw</div>
+                  </div>
+                  <div class="card-empty-space"></div>
+               </div> -->
+            </div>
+         </section>
+          <!--footer-->
+         <footer>FOOTER</footer>
+      </div>
+      <!-- here come the popups -->
+      <div class="pop-up" id="Mount Fuji">
+         <button class = "close-button" onclick = "hidePopUp('Sushi')">x</button>
+         <div class="image-pop-up"></div>
+         <article class="article-pop-up">
+            <h1 class="title-pop-up">Sushi</h1>
+            <p class="description-pop-up"> Sushi is a traditional Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt, accompanied by a variety of ingredients (ネタ, neta), such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari or sumeshi </p>
+         </article>
+      </div>
+   </body>
+   <script src="scriptSusana.js"></script>
+   <script>
+      displayFood();
+      //carrousel thing
+      $(".carousel").owlCarousel({
+         margin: 20,
+         loop: true,
+         autoplay: false,
+         responsiveClass:true,
+         responsive: {
+         0:{
+         items:1,
+         nav: false,
+         stagePadding:50,
+         },
+         400:{
+         items:1,
+         nav: false,
+         stagePadding:100,
+         },
+         1000:{
+         items:1,
+         nav: false,
+         stagePadding:150,
+         },
+         1500:{
+         items:1,
+         nav: false,
+         stagePadding:200,
+         }
+      }
+   });
+</script>
+</html>
